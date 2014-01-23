@@ -34,5 +34,10 @@ namespace GameOfLife.Phone
         {
             Open(StartCultureSelection.Blinker);
         }
+
+        private void BlockLayer2_OnClick(object sender, RoutedEventArgs e)
+        {
+            Open(StartCultureSelection.BlockLayer2);
+        }
     }
 }

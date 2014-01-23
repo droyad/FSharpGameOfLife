@@ -10,6 +10,6 @@ let main argv =
        // Threading.Thread.Sleep(100)
         tickAndPrint gen
 
-    tickAndPrint StartCultures.GliderGun
+    tickAndPrint StartCultures.BlockLayer2
     Console.ReadLine()
     0 // return an integer exit code

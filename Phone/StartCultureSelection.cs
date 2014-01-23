@@ -3,6 +3,7 @@
     internal enum StartCultureSelection
     {
         Blinker,
-        GliderGun
+        GliderGun,
+        BlockLayer2
     }
 }

@@ -10,12 +10,13 @@
     FontFamily="{StaticResource PhoneFontFamilyNormal}"
     FontSize="{StaticResource PhoneFontSizeNormal}"
     Foreground="{StaticResource PhoneForegroundBrush}"
-    SupportedOrientations="Portrait" Orientation="Landscape"
+    SupportedOrientations="Landscape" Orientation="Landscape"
     shell:SystemTray.IsVisible="True">
 
     <!--LayoutRoot is the root grid where all page content is placed-->
     <Grid x:Name="LayoutRoot" Background="Transparent">
         <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
             <RowDefinition Height="Auto"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
@@ -27,9 +28,10 @@
         </StackPanel>
 
         <!--ContentPanel - place additional content here-->
-        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Orientation="Vertical">
-            <Button Name="Blinker" Click="Blinker_OnClick" HorizontalAlignment="Center">Blinker</Button>
-            <Button Name="GliderGun" Click="GliderGun_OnClick"  HorizontalAlignment="Center">Glider Gun</Button>
+        <StackPanel x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0" Orientation="Horizontal">
+            <Button Name="Blinker" Click="Blinker_OnClick" >Blinker</Button>
+            <Button Name="GliderGun" Click="GliderGun_OnClick">Glider Gun</Button>
+            <Button Name="BlockLayer2" Click="BlockLayer2_OnClick">Block Layer 2</Button>
         </StackPanel>
     </Grid>
 
