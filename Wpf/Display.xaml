@@ -1,0 +1,18 @@
+﻿<Window x:Class="Wpf.Display" Name="page"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Display" ResizeMode="NoResize" Height="700" Width="850">
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--ContentPanel - place additional content here-->
+        <TextBlock Text="{Binding Generation.Number, ElementName=page, StringFormat=Generation \{0\}}"  Margin="12,0,12,0">
+        </TextBlock>
+        <Image Grid.Row="1" Name="Image" Stretch="None">
+
+        </Image>
+    </Grid>
+</Window>

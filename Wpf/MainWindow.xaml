@@ -1,0 +1,10 @@
+﻿<Window x:Class="Wpf.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="350" Width="525">
+    <StackPanel x:Name="ContentPanel" Margin="12,0,12,0" Orientation="Vertical">
+        <Button Margin="5" Padding="2" Name="Blinker" Click="Blinker_OnClick" HorizontalAlignment="Center" >Blinker</Button>
+        <Button Margin="5" Padding="2" Name="GliderGun" Click="GliderGun_OnClick" HorizontalAlignment="Center" >Glider Gun</Button>
+        <Button Margin="5" Padding="2" Name="BlockLayer2" Click="BlockLayer2_OnClick" HorizontalAlignment="Center" >Block Layer 2</Button>
+    </StackPanel>
+</Window>
